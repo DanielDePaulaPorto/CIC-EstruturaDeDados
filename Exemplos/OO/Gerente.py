@@ -2,8 +2,9 @@ from Exemplos.OO.Empregado import Empregado
 
 class Gerente(Empregado):
 
-    def __init__(self,nome, idade,salario):
-        super().__init__(nome, idade,salario)
+    def __init__(self, nome, idade, salario):
+        super().__init__(nome, idade, salario)
+        self.bonificao = salario / 10
 
     def calcula_salario(self, perc):
         self.salario *= perc
@@ -20,4 +21,6 @@ print("calcula_salario: " + str(gerente.getSalario()))
 
 gerente.apresentacao()
 gerente.apresentacao("E aí?!")
+
+gerente.saudacao()
 
