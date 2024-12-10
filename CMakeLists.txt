@@ -5,3 +5,4 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Ponto TAD/Ponto/Main.c TAD/Ponto/ponto.c)
 add_executable(Lista TAD/Lista/Main.c TAD/Lista/Lista.c)
+add_executable(Fila TAD/Fila/Main.c TAD/Fila/Fila.c)
