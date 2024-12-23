@@ -3,6 +3,10 @@ project(CIC_ED C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Ponto TAD/Ponto/Main.c TAD/Ponto/ponto.c)
-add_executable(Lista TAD/Lista/Main.c TAD/Lista/Lista.c)
-add_executable(Fila TAD/Fila/Main.c TAD/Fila/Fila.c)
+#add_executable(Ponto TAD/Ponto/Main.c TAD/Ponto/ponto.c)
+#add_executable(Lista TAD/Lista/Main.c TAD/Lista/Lista.c)
+#add_executable(Fila TAD/Fila/Main.c TAD/Fila/Fila.c)
+#add_executable(FilaPrioridades TAD/FilaPrioridades/Main.c TAD/FilaPrioridades/FilaPrioridades.c TAD/Fila/Fila.c)
+add_executable(Pilha TAD/Pilha/Main.c TAD/Pilha/Pilha.c)
+add_executable(Base TAD/Pilha/MudancaBase.c TAD/Pilha/Pilha.c)
+add_executable(Calculadora TAD/Pilha/Calculadora.c TAD/Pilha/Pilha.c)
