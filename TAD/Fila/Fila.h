@@ -7,9 +7,9 @@ typedef struct {
 } No;
 
 typedef struct {
-    No* inicio;  // Ponteiro para o início da fila
-    No* fim;  // Ponteiro para o fim da fila
-    int tamanho; // Número de elementos na fila
+    No* inicio;
+    No* fim;
+    int tamanho;
 } Fila;
 
 // Criação de uma fila nova e vazia

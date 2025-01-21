@@ -35,6 +35,8 @@ int index(Lista* l, int item);
 // Insere um item em uma posição específica da lista
 int insert(Lista* l, int pos, int item);
 
+int insereOrdenado(Lista* l, int item);
+
 // Remove e retorna o último item da lista
 int pop(Lista* l);
 

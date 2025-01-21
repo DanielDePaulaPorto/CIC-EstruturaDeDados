@@ -89,6 +89,31 @@ int index(Lista* l, int item) {
     return -1; // Item não encontrado
 }
 
+int insereOrdenado(Lista* l, int item){
+    No* novo = (No*) malloc(sizeof(No));
+    novo->dado = item;
+    novo->prox = NULL;
+
+    if (l->tamanho == 0){
+      l->inicio = novo;
+      l->tamanho++;
+      return 1;
+    }
+
+    No* atual = l->inicio;
+    No* proximo = atual->prox;
+    while (proximo != NULL){
+      if (proximo != NULL && proximo->dado >= item){
+        atual->prox = novo;
+        novo->prox = proximo;
+          return 1;
+      }
+      atual = proximo;
+        proximo = proximo->prox;
+    }
+    atual->prox = novo;
+}
+
 // Insere um item em uma posição específica
 int insert(Lista* l, int pos, int item) {
     if (pos < 0 || pos > l->tamanho) return 0;
