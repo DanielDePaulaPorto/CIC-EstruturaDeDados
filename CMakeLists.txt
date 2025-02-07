@@ -1,7 +1,13 @@
 cmake_minimum_required(VERSION 3.30)
 project(CIC_ED C)
 
+#add_compile_options(-std=c++11)
+
 set(CMAKE_C_STANDARD 11)
+#set(CMAKE_CXX_STANDARD 11)
+#set(CMAKE_CXX_STANDARD_REQUIRED ON)
+#set(CMAKE_CXX_EXTENSIONS OFF)
+#set(CMAKE_VERBOSE_MAKEFILE ON)
 
 #add_executable(Ponto TAD/Ponto/Main.c TAD/Ponto/ponto.c)
 #add_executable(Lista TAD/Lista/Main.c TAD/Lista/Lista.c)
@@ -14,3 +20,4 @@ add_executable(Ordenacao ComplexidadeOrdenacao/Corrida.c TAD/Lista/Lista.c)
 add_executable(Hash TAD/TabelaHash/TabelaHash.c TAD/TabelaHash/main.c)
 add_executable(Grafo TAD/Grafo/Grafo.c TAD/Grafo/main.c)
 add_executable(ArvoreBinaria TAD/ArvoreBinaria/ArvoreBinaria.c TAD/ArvoreBinaria/Main.c)
+add_executable(Huffman TAD/Huffman/Huffman.c TAD/Huffman/Main.c)
