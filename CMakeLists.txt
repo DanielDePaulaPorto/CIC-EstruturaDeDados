@@ -4,10 +4,7 @@ project(CIC_ED C)
 #add_compile_options(-std=c++11)
 
 set(CMAKE_C_STANDARD 11)
-#set(CMAKE_CXX_STANDARD 11)
-#set(CMAKE_CXX_STANDARD_REQUIRED ON)
-#set(CMAKE_CXX_EXTENSIONS OFF)
-#set(CMAKE_VERBOSE_MAKEFILE ON)
+
 
 #add_executable(Ponto TAD/Ponto/Main.c TAD/Ponto/ponto.c)
 #add_executable(Lista TAD/Lista/Main.c TAD/Lista/Lista.c)
