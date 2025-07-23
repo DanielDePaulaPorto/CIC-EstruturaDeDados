@@ -1,9 +1,10 @@
 #ifndef LISTA_H
 #define LISTA_H
 
+
 typedef struct No{
   int dado;
-  struct No* prox;
+  struct No* filhos;
 } No;
 
 typedef struct Lista{
